@@ -4,6 +4,13 @@ namespace TestTechniqueSerensia.Entities
 {
     public class AmTheTest : IAmTheTest
     {
+        /// <summary>
+        /// Retourne un score de différence entre deux chaînes de caractères.
+        /// </summary>
+        /// <param name="dest"></param>
+        /// <param name="src"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
         public int GetDifferenceScore(string dest, string src)
         {
             if (string.IsNullOrEmpty(src))
@@ -18,6 +25,8 @@ namespace TestTechniqueSerensia.Entities
 
             var bestScore = int.MaxValue;
 
+            // Parcourir la chaîne source pour trouver la sous-chaîne
+            // qui correspond le mieux à la chaîne de destination
             for (int i = 0; i <= src.Length - dest.Length; i++)
             {
                 int score = 0;
@@ -34,6 +43,13 @@ namespace TestTechniqueSerensia.Entities
             return bestScore;
         }
 
+        /// <summary>
+        /// Retourne une liste de suggestions basée sur le terme recherché, les choix disponibles et le nombre de suggestions souhaité.
+        /// </summary>
+        /// <param name="term"></param>
+        /// <param name="choices"></param>
+        /// <param name="numberOfSuggestions"></param>
+        /// <returns></returns>
         public IEnumerable<string> GetSuggestions(string term, IEnumerable<string> choices, int numberOfSuggestions)
         {
             var scores = new Dictionary<string, int>(); 
@@ -41,7 +57,10 @@ namespace TestTechniqueSerensia.Entities
             if (choices == null || !choices.Any())
                 return [];
 
-            foreach(var choice in choices)
+
+            // Calculer le score de différence pour chaque terme choisi
+            // et le stocker dans un dictionnaire
+            foreach (var choice in choices)
             {
                int score = GetDifferenceScore(term, choice);
 
