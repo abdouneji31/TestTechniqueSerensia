@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37216.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTechniqueSerensia", "TestTechniqueSerensia\TestTechniqueSerensia.csproj", "{EB240688-F6DE-49CC-91D5-B65CCF2BC553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTechniqueSerensia.Test", "TestTechniqueSerensia.Test\TestTechniqueSerensia.Test.csproj", "{CFD0436C-DBC5-4EB0-A56F-9A22721C67E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB240688-F6DE-49CC-91D5-B65CCF2BC553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB240688-F6DE-49CC-91D5-B65CCF2BC553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB240688-F6DE-49CC-91D5-B65CCF2BC553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB240688-F6DE-49CC-91D5-B65CCF2BC553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFD0436C-DBC5-4EB0-A56F-9A22721C67E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD0436C-DBC5-4EB0-A56F-9A22721C67E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD0436C-DBC5-4EB0-A56F-9A22721C67E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD0436C-DBC5-4EB0-A56F-9A22721C67E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {139D92AA-7DEE-40BE-A8B4-DC48977AED63}
+	EndGlobalSection
+EndGlobal
